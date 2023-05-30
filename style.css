@@ -1,0 +1,81 @@
+@keyframes fadeInRight {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+        
+
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes fadeInLeft {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+        
+
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+input[type="checkbox"]{
+    display: none;
+}
+h1{
+    animation: fadeInRight 0.5s ease-in;
+    background: #fd5;
+    padding: 10px 20px;
+    
+}
+h2{
+    opacity: 0;
+    animation: fadeInRight 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+    background: #12eb12;
+    padding: 10px 20px;
+    
+    
+
+}
+h3{
+    opacity: 0;
+    animation: fadeInRight 0.5s ease-in forwards;
+    animation-delay: 1.0s;
+    background: salmon;
+    padding: 10px 20px;
+    
+
+}
+.wrapper{
+    display: flex;
+    gap: 30px;
+}
+.box{
+    height: 50px;
+    width: 50px;
+    background: #fd5;
+}
+.box1{
+    opacity: 0;
+    animation: fadeInLeft 0.3s ease-in forwards;
+    animation-delay: 1.5s;
+}
+.box2{
+    opacity: 0;
+    animation: fadeInLeft 0.3s ease-in forwards;
+    animation-delay: 1.8s;
+}
+.box3{
+    opacity: 0;
+    animation: fadeInLeft 0.3s ease-in forwards;
+    animation-delay: 2.1s;
+}
